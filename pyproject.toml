@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axialnet-congestion"
+version = "1.0.0"
+description = "AxialNet congestion prediction for full-resolution VLSI layouts"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [
+  {name = "Zhiyan Liu"},
+  {name = "Jiawei Liu"},
+  {name = "Jianwang Zhai"},
+  {name = "Chuan Shi"},
+]
+dependencies = [
+  "easydict==1.13",
+  "numpy==1.23.2",
+  "PyYAML==6.0",
+  "tensorboard==2.20.0",
+  "torch==2.6.0",
+  "torch-geometric==2.6.1",
+  "torchmetrics==1.8.2",
+  "tqdm==4.64.0",
+]
+
+[project.optional-dependencies]
+preprocess = ["lefdef==0.6.0"]
+test = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+include = ["axialnet*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

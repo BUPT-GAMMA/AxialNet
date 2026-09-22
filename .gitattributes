@@ -1,0 +1,7 @@
+* text=auto
+*.log text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.pth binary

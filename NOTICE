@@ -1,0 +1,7 @@
+AxialNet Congestion Prediction
+Copyright 2026 Zhiyan Liu, Jiawei Liu, Jianwang Zhai, and Chuan Shi
+
+This product depends on third-party open-source packages and uses the
+CircuitNet-N28 dataset when supplied by the user. No CircuitNet dataset files
+are redistributed. See THIRD_PARTY.md for upstream projects and licenses.
+
