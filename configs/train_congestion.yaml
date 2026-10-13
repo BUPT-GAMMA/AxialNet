@@ -33,8 +33,7 @@ model:
       net_in_dim: 4
       hidden_dim: 64
       num_loops: 2
-      # Set true only for the GAT-feedback variant and retrain.
-      apply_graph_updates: false
+      apply_graph_updates: true
   head:
     type: DualCongestionHead
     params:
